@@ -6,11 +6,8 @@ var email;
 exports.loaded = function(args) {
     var page = args.object;
     email = viewModule.getViewById(page, "email");
+    alert(email)
 };
-
-exports.loaded = function() {
-    alert("Loaded");
-}
 
 exports.signIn = function() {
     alert("Signing in");
